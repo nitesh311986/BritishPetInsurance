@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.util.Date;
 
 public class TestBase {
-    public WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeClass
     public void setUp() {
@@ -41,10 +41,10 @@ public class TestBase {
     public String captureScreen(String tname) throws IOException {
 
         String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        TakesScreenshot takesScreenshot=(TakesScreenshot)driver;
+        File source=takesScreenshot.getScreenshotAs(OutputType.FILE);
         String destination = System.getProperty("user.dir") + "\\ScreenShots\\" + tname + "_" + timeStamp + ".png";
+        System.out.println(destination);
 
         try {
             FileUtils.copyFile(source, new File(destination));

@@ -8,10 +8,12 @@
     <classes>
       <class name="testCases.Tc001_Login_Verify">
         <methods>
+          <include name="verifyPolicySamplePageDownLoad"/>
           <include name="verifyItemsOnDashboard"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="verifyAccountPageIcon"/>
+          <include name="verifyClaimPageInformation"/>
           <include name="verifyMicroChipPageData"/>
           <include name="verifyPolicyInformationPageLaunch"/>
           <include name="verifyAddClaimPageDropDown"/>
