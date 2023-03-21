@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 208.454 s <<< FAILURE! - in TestSuite
-testCases.Tc001_Login_Verify.verifyItemsOnDashboard  Time elapsed: 0.115 s  <<< FAILURE!
+Tests run: 26, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 351.275 s <<< FAILURE! - in TestSuite
+testCases.Tc001_Login_Verify.verifyItemsOnDashboard  Time elapsed: 0.107 s  <<< FAILURE!
 java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
@@ -40,17 +40,17 @@ java.lang.AssertionError: null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch  Time elapsed: 14.138 s  <<< FAILURE!
+testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch  Time elapsed: 14.84 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element <td class="" role="gridcell">...</td> is not clickable at point (191, 688). Other element would receive the click: <div id="gridName" name="gridName" data-role="grid" class="k-grid k-widget k-display-block">...</div>
   (Session info: MicrosoftEdge=111.0.1661.44)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=392a2b31-d9fe-4d89-95d2-f3d07838fb5c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -> xpath: //div[@id='gridName']/table/tbody[1]/tr/td[3]]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=21ba846f-966c-4329-bf93-5eb5440e2f6c}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -> xpath: //div[@id='gridName']/table/tbody[1]/tr/td[3]]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -100,16 +100,38 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-testCases.Tc001_Login_Verify.verifyLetterTemplatePage  Time elapsed: 5.523 s  <<< FAILURE!
-java.lang.AssertionError: expected [15] but found [5]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at pageObjects.LetterTemplatePageData.fetchData(LetterTemplatePageData.java:53)
-	at testCases.Tc001_Login_Verify.verifyLetterTemplatePage(Tc001_Login_Verify.java:302)
+testCases.Tc001_Login_Verify.verifyMicroChipPageData  Time elapsed: 2.487 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="btn btn-primary btn-sm btn-add-nav" title="Upload Microchip File" href="/MicrochipUpload/UploadFile">...</a> is not clickable at point (1364, 86). Other element would receive the click: <div class="spiner-example">...</div>
+  (Session info: MicrosoftEdge=111.0.1661.44)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=5086b3ea-8f64-4fe4-a7af-ce0ee0af1e82}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -> xpath: //div[@class='form-group pull-right']/div/a[3]]
+Session ID: 92606432f7ae9c583480ad4a97694125
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pageObjects.MicrochipFileUploadPage.clickONMicrochipIcon(MicrochipFileUploadPage.java:32)
+	at testCases.Tc001_Login_Verify.verifyMicroChipPageData(Tc001_Login_Verify.java:286)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,7 +165,7 @@ java.lang.AssertionError: expected [15] but found [5]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-testCases.Tc001_Login_Verify.verifyAccountPageIcon  Time elapsed: 1.944 s  <<< FAILURE!
+testCases.Tc001_Login_Verify.verifyAccountPageIcon  Time elapsed: 3.813 s  <<< FAILURE!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
   (Session info: MicrosoftEdge=111.0.1661.44)
@@ -151,10 +173,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=289cfbe9-6413-4ab8-8145-cadb7371a8c5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -> xpath: //div[@class='ibox-content']/div/div/a]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=47251d7b-bf72-4199-972e-21b8cabaaf20}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -> xpath: //div[@class='ibox-content']/div/div/a]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -204,17 +226,17 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown  Time elapsed: 0.148 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
+testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown  Time elapsed: 10.63 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span unselectable="on" class="k-input">...</span> is not clickable at point (223, 153). Other element would receive the click: <div class="spiner-example">...</div>
   (Session info: MicrosoftEdge=111.0.1661.44)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=da5e32f3-e654-46bc-949d-29dbae705f9b}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -> xpath: //ul[@id='side-menu']/li[6]/ul/li[1]]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=e6e4b97f-597b-4adb-8987-666493a51047}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -> xpath: //div[@class='well1']/div/div/div/div/span/span/span[@class='k-input']]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -233,9 +255,9 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pageObjects.AddClaimPage.clickManageClaimIcon(AddClaimPage.java:35)
-	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:325)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pageObjects.AddClaimPage.verifyDropDownItems(AddClaimPage.java:48)
+	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:327)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

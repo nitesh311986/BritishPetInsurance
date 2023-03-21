@@ -22,8 +22,8 @@ public class PolicyInformationPage extends BasePage {
     //Elements
     @FindBy(css = "ul[id='side-menu']>li:nth-child(5)")
     WebElement policyIcon;
-    @FindBy(xpath = "//div[@id='page-wrapper']/div[3]/div/h2")
-    WebElement policyMessage;
+    //@FindBy(xpath = "//div[@id='page-wrapper']/div[3]/div/h2")
+    //WebElement policyMessage;
 
     //Methods
     public void clickPolicyIcon() {

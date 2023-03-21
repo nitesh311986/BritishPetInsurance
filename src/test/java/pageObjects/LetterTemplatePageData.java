@@ -50,7 +50,7 @@ public class LetterTemplatePageData extends BasePage {
         List<WebElement> totalRow = waitR.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         int rSize = totalRow.size();
         //System.out.println(rSize);
-        Assert.assertEquals(thSize,15);
+        Assert.assertEquals(rSize,15);
         for (WebElement trRow : totalRow) {
             System.out.println(trRow.getText());
         }

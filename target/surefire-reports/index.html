@@ -118,7 +118,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyLetterTemplatePage">verifyLetterTemplatePage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyMicroChipPageData">verifyMicroChipPageData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,6 +172,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyLetterTemplatePage">verifyLetterTemplatePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyLetterTemplatePageEditFun">verifyLetterTemplatePageEditFun</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -193,11 +198,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyManageTaskDashBoard">verifyManageTaskDashBoard</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BritishPetCare" title="testCases.Tc001_Login_Verify" class="method navigator-link" hash-for-method="verifyMicroChipPageData">verifyMicroChipPageData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -269,10 +269,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=289cfbe9-6413-4ab8-8145-cadb7371a8c5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -&gt; xpath: //div[@class=&apos;ibox-content&apos;]/div/div/a]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=47251d7b-bf72-4199-972e-21b8cabaaf20}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -&gt; xpath: //div[@class=&apos;ibox-content&apos;]/div/div/a]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -294,15 +294,15 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
                   <a name="verifyAddClaimPageDropDown">
                   </a> <!-- verifyAddClaimPageDropDown -->
                   <span class="method-name">verifyAddClaimPageDropDown</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span unselectable=&quot;on&quot; class=&quot;k-input&quot;&gt;...&lt;/span&gt; is not clickable at point (223, 153). Other element would receive the click: &lt;div class=&quot;spiner-example&quot;&gt;...&lt;/div&gt;
   (Session info: MicrosoftEdge=111.0.1661.44)
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=da5e32f3-e654-46bc-949d-29dbae705f9b}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -&gt; xpath: //ul[@id=&apos;side-menu&apos;]/li[6]/ul/li[1]]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=e6e4b97f-597b-4adb-8987-666493a51047}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -&gt; xpath: //div[@class=&apos;well1&apos;]/div/div/div/div/span/span/span[@class=&apos;k-input&apos;]]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -313,9 +313,9 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pageObjects.AddClaimPage.clickManageClaimIcon(AddClaimPage.java:35)
-	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:325)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pageObjects.AddClaimPage.verifyDropDownItems(AddClaimPage.java:48)
+	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:327)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 39 stack frames
 </div> <!-- stack-trace -->
@@ -335,14 +335,33 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLetterTemplatePage">
-                  </a> <!-- verifyLetterTemplatePage -->
-                  <span class="method-name">verifyLetterTemplatePage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [15] but found [5]
-	at pageObjects.LetterTemplatePageData.fetchData(LetterTemplatePageData.java:53)
-	at testCases.Tc001_Login_Verify.verifyLetterTemplatePage(Tc001_Login_Verify.java:302)
+                  <a name="verifyMicroChipPageData">
+                  </a> <!-- verifyMicroChipPageData -->
+                  <span class="method-name">verifyMicroChipPageData</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;btn btn-primary btn-sm btn-add-nav&quot; title=&quot;Upload Microchip File&quot; href=&quot;/MicrochipUpload/UploadFile&quot;&gt;...&lt;/a&gt; is not clickable at point (1364, 86). Other element would receive the click: &lt;div class=&quot;spiner-example&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=111.0.1661.44)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=5086b3ea-8f64-4fe4-a7af-ce0ee0af1e82}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -&gt; xpath: //div[@class=&apos;form-group pull-right&apos;]/div/a[3]]
+Session ID: 92606432f7ae9c583480ad4a97694125
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pageObjects.MicrochipFileUploadPage.clickONMicrochipIcon(MicrochipFileUploadPage.java:32)
+	at testCases.Tc001_Login_Verify.verifyMicroChipPageData(Tc001_Login_Verify.java:286)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
+... Removed 39 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -356,10 +375,10 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [75e0fb183f80fcd8f8c711574450cc48, clickElement {id=392a2b31-d9fe-4d89-95d2-f3d07838fb5c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:58585}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58585/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (75e0fb183f80fcd8f8c711574450cc48)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[3]]
-Session ID: 75e0fb183f80fcd8f8c711574450cc48
+Command: [92606432f7ae9c583480ad4a97694125, clickElement {id=21ba846f-966c-4329-bf93-5eb5440e2f6c}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:54673}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54673/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (92606432f7ae9c583480ad4a97694125)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[3]]
+Session ID: 92606432f7ae9c583480ad4a97694125
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -435,6 +454,13 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyLetterTemplatePage">
+                  </a> <!-- verifyLetterTemplatePage -->
+                  <span class="method-name">verifyLetterTemplatePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyLetterTemplatePageEditFun">
                   </a> <!-- verifyLetterTemplatePageEditFun -->
                   <span class="method-name">verifyLetterTemplatePageEditFun</span>
@@ -466,13 +492,6 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
                   <a name="verifyManageTaskDashBoard">
                   </a> <!-- verifyManageTaskDashBoard -->
                   <span class="method-name">verifyManageTaskDashBoard</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyMicroChipPageData">
-                  </a> <!-- verifyMicroChipPageData -->
-                  <span class="method-name">verifyMicroChipPageData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -543,6 +562,9 @@ Session ID: 75e0fb183f80fcd8f8c711574450cc48
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;BritishPetCare&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utility.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Sanity&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.Tc001_Login_Verify&quot;/&gt;
@@ -587,114 +609,114 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(26);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPolicySamplePageDownLoad')
+data.setCell(0, 1, 'verifyLogin')
 data.setCell(0, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(0, 3, 21983);
+data.setCell(0, 3, 31955);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyClaimPageInformation')
+data.setCell(1, 1, 'verifyPolicySamplePageDownLoad')
 data.setCell(1, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(1, 3, 20217);
+data.setCell(1, 3, 23695);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
+data.setCell(2, 1, 'verifyClaimPageInformation')
 data.setCell(2, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(2, 3, 16432);
+data.setCell(2, 3, 20970);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPolicyInformationPageLaunch')
+data.setCell(3, 1, 'verifyQuotePageData')
 data.setCell(3, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(3, 3, 14138);
+data.setCell(3, 3, 19375);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyQuotePageData')
+data.setCell(4, 1, 'verifyAddTaskPageDetails')
 data.setCell(4, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(4, 3, 13298);
+data.setCell(4, 3, 18977);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyManageClaimDateAndPondSymbol')
+data.setCell(5, 1, 'verifyAddQuotePageLaunch')
 data.setCell(5, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(5, 3, 11471);
+data.setCell(5, 3, 15144);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyQuotePagePremiumPoundSign')
+data.setCell(6, 1, 'verifyPolicyInformationPageLaunch')
 data.setCell(6, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(6, 3, 9878);
+data.setCell(6, 3, 14840);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyLetterTemplatePageEditFun')
+data.setCell(7, 1, 'verifyManageTaskDashBoard')
 data.setCell(7, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(7, 3, 9046);
+data.setCell(7, 3, 12681);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyAddTaskPageDetails')
+data.setCell(8, 1, 'verifyLetterTemplatePageEditFun')
 data.setCell(8, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(8, 3, 8553);
+data.setCell(8, 3, 12398);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyPolicyPage')
+data.setCell(9, 1, 'verifyManageClaimDateAndPondSymbol')
 data.setCell(9, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(9, 3, 8286);
+data.setCell(9, 3, 11820);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyQuoteManagePage')
+data.setCell(10, 1, 'verifyAddClaimPageDropDown')
 data.setCell(10, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(10, 3, 6600);
+data.setCell(10, 3, 10629);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyProductListOnAddQuotePage')
+data.setCell(11, 1, 'verifyQuotePagePremiumPoundSign')
 data.setCell(11, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(11, 3, 6250);
+data.setCell(11, 3, 10599);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLetterTemplatePage')
+data.setCell(12, 1, 'verifyQuoteManagePage')
 data.setCell(12, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(12, 3, 5523);
+data.setCell(12, 3, 9623);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyPolicyPageDateFormat')
+data.setCell(13, 1, 'verifyProductListOnAddQuotePage')
 data.setCell(13, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(13, 3, 5270);
+data.setCell(13, 3, 8582);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyApprovalClaimDashBoardDetails')
+data.setCell(14, 1, 'verifyPolicyPage')
 data.setCell(14, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(14, 3, 5137);
+data.setCell(14, 3, 8360);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyAddQuotePageLaunch')
+data.setCell(15, 1, 'verifyPolicyPageDateFormat')
 data.setCell(15, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(15, 3, 4941);
+data.setCell(15, 3, 6746);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifyLogOut')
+data.setCell(16, 1, 'verifyLetterTemplatePage')
 data.setCell(16, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(16, 3, 4231);
+data.setCell(16, 3, 6593);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyClientManagePage')
+data.setCell(17, 1, 'verifyApprovalClaimDashBoardDetails')
 data.setCell(17, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(17, 3, 3397);
+data.setCell(17, 3, 6196);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyMicroChipPageData')
+data.setCell(18, 1, 'verifyLogOut')
 data.setCell(18, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(18, 3, 3251);
+data.setCell(18, 3, 5965);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyManageTaskDashBoard')
+data.setCell(19, 1, 'verifyClientManagePage')
 data.setCell(19, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(19, 3, 2925);
+data.setCell(19, 3, 4568);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'verifyAccountPageIcon')
 data.setCell(20, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(20, 3, 1942);
+data.setCell(20, 3, 3811);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyDateFormatOnQuotePage')
+data.setCell(21, 1, 'verifyMicroChipPageData')
 data.setCell(21, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(21, 3, 1250);
+data.setCell(21, 3, 2487);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verifyAddClaimPageDropDown')
+data.setCell(22, 1, 'verifyDateFormatOnQuotePage')
 data.setCell(22, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(22, 3, 148);
+data.setCell(22, 3, 2154);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'verifyGraphMessages')
 data.setCell(23, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(23, 3, 112);
+data.setCell(23, 3, 126);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'verifyItemsOnDashboard')
 data.setCell(24, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(24, 3, 112);
+data.setCell(24, 3, 107);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'verifyRole')
 data.setCell(25, 2, 'testCases.Tc001_Login_Verify')
-data.setCell(25, 3, 19);
+data.setCell(25, 3, 23);
 window.suiteTableData['BritishPetCare']= { tableData: data, tableDiv: 'times-div-BritishPetCare'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-BritishPetCare">
               </div> <!-- times-div-BritishPetCare -->
             </div> <!-- times-div -->
@@ -727,121 +749,121 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">23279 ms</span>
+                <span class="method-start">81550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRole</span>
-                <span class="method-start">39715 ms</span>
+                <span class="method-start">113515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyItemsOnDashboard</span>
-                <span class="method-start">39734 ms</span>
+                <span class="method-start">113538 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyGraphMessages</span>
-                <span class="method-start">39849 ms</span>
+                <span class="method-start">113645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyClientManagePage</span>
-                <span class="method-start">39961 ms</span>
+                <span class="method-start">113771 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyQuoteManagePage</span>
-                <span class="method-start">43358 ms</span>
+                <span class="method-start">118339 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyDateFormatOnQuotePage</span>
-                <span class="method-start">49959 ms</span>
+                <span class="method-start">127962 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAddQuotePageLaunch</span>
-                <span class="method-start">51209 ms</span>
+                <span class="method-start">130117 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyProductListOnAddQuotePage</span>
-                <span class="method-start">56150 ms</span>
+                <span class="method-start">145262 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPolicyPage</span>
-                <span class="method-start">62400 ms</span>
+                <span class="method-start">153848 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPolicyPageDateFormat</span>
-                <span class="method-start">70686 ms</span>
+                <span class="method-start">162215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyPolicyInformationPageLaunch</span>
-                <span class="method-start">75956 ms</span>
+                <span class="method-start">168961 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPolicySamplePageDownLoad</span>
-                <span class="method-start">90094 ms</span>
+                <span class="method-start">183805 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyManageClaimDateAndPondSymbol</span>
-                <span class="method-start">112078 ms</span>
+                <span class="method-start">207501 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyClaimPageInformation</span>
-                <span class="method-start">123549 ms</span>
+                <span class="method-start">219321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyApprovalClaimDashBoardDetails</span>
-                <span class="method-start">143767 ms</span>
+                <span class="method-start">240293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyManageTaskDashBoard</span>
-                <span class="method-start">148914 ms</span>
+                <span class="method-start">246489 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAddTaskPageDetails</span>
-                <span class="method-start">151840 ms</span>
+                <span class="method-start">259170 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyQuotePageData</span>
-                <span class="method-start">160393 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyMicroChipPageData</span>
-                <span class="method-start">173692 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyQuotePagePremiumPoundSign</span>
-                <span class="method-start">176959 ms</span>
+                <span class="method-start">278148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">verifyMicroChipPageData</span>
+                <span class="method-start">297523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyQuotePagePremiumPoundSign</span>
+                <span class="method-start">300012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">verifyLetterTemplatePage</span>
-                <span class="method-start">186844 ms</span>
+                <span class="method-start">310614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLetterTemplatePageEditFun</span>
-                <span class="method-start">192367 ms</span>
+                <span class="method-start">317212 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyAccountPageIcon</span>
-                <span class="method-start">201413 ms</span>
+                <span class="method-start">329610 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyAddClaimPageDropDown</span>
-                <span class="method-start">203356 ms</span>
+                <span class="method-start">333422 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLogOut</span>
-                <span class="method-start">203505 ms</span>
+                <span class="method-start">344053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">207738 ms</span>
+                <span class="method-start">350018 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
