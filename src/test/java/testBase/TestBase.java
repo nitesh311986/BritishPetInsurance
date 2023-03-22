@@ -20,17 +20,9 @@ public class TestBase {
     public static WebDriver driver;
 
     @BeforeClass
-    @Parameters({"browser"})
-    public void setUp(String br) {
-        if(br.equals("edge")) {
-            driver = new EdgeDriver();
-        }
-        else if(br.equals("chrome")){
-            driver=new ChromeDriver();
-        }
-        else {
-            driver=new EdgeDriver();
-        }
+
+    public void setUp() {
+        driver=new EdgeDriver();
         driver.manage().window().maximize();
         driver.get("http://52.32.106.250:7779/");
         //driver.navigate().to("http://52.32.106.250:7779/");
