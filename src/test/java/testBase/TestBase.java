@@ -22,7 +22,7 @@ public class TestBase {
     @BeforeClass
 
     public void setUp() {
-        driver=new EdgeDriver();
+        driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://52.32.106.250:7779/");
         //driver.navigate().to("http://52.32.106.250:7779/");

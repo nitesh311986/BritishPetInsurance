@@ -8,8 +8,8 @@
     <classes>
       <class name="testCases.Tc001_Login_Verify">
         <methods>
-          <include name="verifyQuotePageData"/>
           <include name="verifyPolicySamplePageDownLoad"/>
+          <include name="verifyQuotePageData"/>
           <include name="verifyProductListOnAddQuotePage"/>
           <include name="verifyQuoteManagePage"/>
           <include name="tearDown"/>
@@ -17,8 +17,8 @@
           <include name="verifyPolicyPage"/>
           <include name="verifyQuotePagePremiumPoundSign"/>
           <include name="verifyDateFormatOnQuotePage"/>
-          <include name="verifyLetterTemplatePageEditFun"/>
           <include name="verifyApprovalClaimDashBoardDetails"/>
+          <include name="verifyLetterTemplatePageEditFun"/>
           <include name="verifyClaimPageInformation"/>
           <include name="verifyAddClaimPageDropDown"/>
           <include name="verifyManageTaskDashBoard"/>
@@ -27,8 +27,8 @@
           <include name="verifyLetterTemplatePage"/>
           <include name="verifyAddQuotePageLaunch"/>
           <include name="verifyRole"/>
-          <include name="verifyMicroChipPageData"/>
           <include name="verifyLogin"/>
+          <include name="verifyMicroChipPageData"/>
           <include name="verifyGraphMessages"/>
           <include name="verifyItemsOnDashboard"/>
           <include name="setUp"/>
