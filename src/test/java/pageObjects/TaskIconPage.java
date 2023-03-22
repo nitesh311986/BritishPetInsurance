@@ -38,8 +38,14 @@ public class TaskIconPage extends BasePage {
         for (WebElement cEle : totalColumn) {
             cEle.click();
             //System.out.println(cEle.getText());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(driver.getCurrentUrl());
-            //accountIcon.click();
+            accountIcon.click();
+            break;
 
         }
 

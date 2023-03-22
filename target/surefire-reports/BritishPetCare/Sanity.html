@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Sanity</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/26</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 21 10:50:35 IST 2023</td>
+<td>Started on:</td><td>Wed Mar 22 13:59:13 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>388 seconds (388876 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (234 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,66 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch()'><b>verifyPolicyInformationPageLaunch</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;td class=&quot;&quot; role=&quot;gridcell&quot;&gt;...&lt;/td&gt; is not clickable at point (191, 688). Other element would receive the click: &lt;div id=&quot;gridName&quot; name=&quot;gridName&quot; data-role=&quot;grid&quot; class=&quot;k-grid k-widget k-display-block&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=c63f3163-0929-4cf9-b013-306c21c357dd}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[3]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObjects.PolicyInformationPage.fetchData(PolicyInformationPage.java:55)
-	at testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch(Tc001_Login_Verify.java:213)
+<td title='testCases.Tc001_Login_Verify.setUp()'><b>setUp</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1578026015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1578026015'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;td class=&quot;&quot; role=&quot;gridcell&quot;&gt;...&lt;/td&gt; is not clickable at point (191, 688). Other element would receive the click: &lt;div id=&quot;gridName&quot; name=&quot;gridName&quot; data-role=&quot;grid&quot; class=&quot;k-grid k-widget k-display-block&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=c63f3163-0929-4cf9-b013-306c21c357dd}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[3]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObjects.PolicyInformationPage.fetchData(PolicyInformationPage.java:55)
-	at testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch(Tc001_Login_Verify.java:213)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2107577743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107577743'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
@@ -157,522 +113,11 @@ Session ID: 57123f8eef590d6a88769ec444a73dfb
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>15</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyAccountPageIcon()'><b>verifyAccountPageIcon</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=4aee15d1-0782-405a-b0c4-57ae1c06661c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@class=&apos;ibox-content&apos;]/div/div/a]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObjects.TaskIconPage.traversingThroughPages(TaskIconPage.java:39)
-	at testCases.Tc001_Login_Verify.verifyAccountPageIcon(Tc001_Login_Verify.java:319)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526730726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1526730726'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=4aee15d1-0782-405a-b0c4-57ae1c06661c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@class=&apos;ibox-content&apos;]/div/div/a]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObjects.TaskIconPage.traversingThroughPages(TaskIconPage.java:39)
-	at testCases.Tc001_Login_Verify.verifyAccountPageIcon(Tc001_Login_Verify.java:319)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>3</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown()'><b>verifyAddClaimPageDropDown</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=ff45a9e9-6534-4a4a-93c2-004d0eb5a8c4}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //ul[@id=&apos;side-menu&apos;]/li[6]/ul/li[1]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.AddClaimPage.clickManageClaimIcon(AddClaimPage.java:35)
-	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:325)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace270812962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace270812962'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=ff45a9e9-6534-4a4a-93c2-004d0eb5a8c4}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //ul[@id=&apos;side-menu&apos;]/li[6]/ul/li[1]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.AddClaimPage.clickManageClaimIcon(AddClaimPage.java:35)
-	at testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown(Tc001_Login_Verify.java:325)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyClaimPageInformation()'><b>verifyClaimPageInformation</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, getElementText {id=2bb31ef1-2bc6-4e40-96df-4b2973367867}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[5]/a]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at pageObjects.ClaimInformationPage.verifyClaimPageInformation(ClaimInformationPage.java:45)
-	at testCases.Tc001_Login_Verify.verifyClaimPageInformation(Tc001_Login_Verify.java:236)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295372946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace295372946'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, getElementText {id=2bb31ef1-2bc6-4e40-96df-4b2973367867}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@id=&apos;gridName&apos;]/table/tbody[1]/tr/td[5]/a]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at pageObjects.ClaimInformationPage.verifyClaimPageInformation(ClaimInformationPage.java:45)
-	at testCases.Tc001_Login_Verify.verifyClaimPageInformation(Tc001_Login_Verify.java:236)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>5</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyPolicySamplePageDownLoad()'><b>verifyPolicySamplePageDownLoad</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;gridPolicyLetterList&apos;]/table/tbody/tr/td[14]/div/a[1]&quot;}
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, findElement {using=xpath, value=//div[@id=&apos;gridPolicyLetterList&apos;]/table/tbody/tr/td[14]/div/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at pageObjects.PolicySampleDocumentsDownLoad.fetchData(PolicySampleDocumentsDownLoad.java:66)
-	at testCases.Tc001_Login_Verify.verifyPolicySamplePageDownLoad(Tc001_Login_Verify.java:221)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345060426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345060426'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;gridPolicyLetterList&apos;]/table/tbody/tr/td[14]/div/a[1]&quot;}
-  (Session info: MicrosoftEdge=111.0.1661.44)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, findElement {using=xpath, value=//div[@id=&apos;gridPolicyLetterList&apos;]/table/tbody/tr/td[14]/div/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at pageObjects.PolicySampleDocumentsDownLoad.fetchData(PolicySampleDocumentsDownLoad.java:66)
-	at testCases.Tc001_Login_Verify.verifyPolicySamplePageDownLoad(Tc001_Login_Verify.java:221)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>12</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyItemsOnDashboard()'><b>verifyItemsOnDashboard</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>java.lang.AssertionError: null
-	at testCases.Tc001_Login_Verify.verifyItemsOnDashboard(Tc001_Login_Verify.java:77)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1673389762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1673389762'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at testCases.Tc001_Login_Verify.verifyItemsOnDashboard(Tc001_Login_Verify.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyMicroChipPageData()'><b>verifyMicroChipPageData</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;btn btn-primary btn-sm btn-add-nav&quot; title=&quot;Upload Microchip File&quot; href=&quot;/MicrochipUpload/UploadFile&quot;&gt;...&lt;/a&gt; is not clickable at point (1364, 86). Other element would receive the click: &lt;div class=&quot;spiner-example&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=c104c5ac-503d-4bed-89ac-2473943b6f3d}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@class=&apos;form-group pull-right&apos;]/div/a[3]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.MicrochipFileUploadPage.clickONMicrochipIcon(MicrochipFileUploadPage.java:32)
-	at testCases.Tc001_Login_Verify.verifyMicroChipPageData(Tc001_Login_Verify.java:286)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86384329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace86384329'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;btn btn-primary btn-sm btn-add-nav&quot; title=&quot;Upload Microchip File&quot; href=&quot;/MicrochipUpload/UploadFile&quot;&gt;...&lt;/a&gt; is not clickable at point (1364, 86). Other element would receive the click: &lt;div class=&quot;spiner-example&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57123f8eef590d6a88769ec444a73dfb, clickElement {id=c104c5ac-503d-4bed-89ac-2473943b6f3d}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:59325}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\prowe\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59325/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (57123f8eef590d6a88769ec444a73dfb)] -&gt; xpath: //div[@class=&apos;form-group pull-right&apos;]/div/a[3]]
-Session ID: 57123f8eef590d6a88769ec444a73dfb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.MicrochipFileUploadPage.clickONMicrochipIcon(MicrochipFileUploadPage.java:32)
-	at testCases.Tc001_Login_Verify.verifyMicroChipPageData(Tc001_Login_Verify.java:286)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
+<td>-1679473753</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -680,100 +125,1059 @@ Session ID: 57123f8eef590d6a88769ec444a73dfb
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.Tc001_Login_Verify.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>31</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyRole()'><b>verifyRole</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td title='testCases.Tc001_Login_Verify.tearDown()'><b>tearDown</b><br>Test class: testCases.Tc001_Login_Verify</td>
 <td></td>
 <td>0</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyLetterTemplatePage()'><b>verifyLetterTemplatePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>5</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyProductListOnAddQuotePage()'><b>verifyProductListOnAddQuotePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>11</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyApprovalClaimDashBoardDetails()'><b>verifyApprovalClaimDashBoardDetails</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>6</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyClientManagePage()'><b>verifyClientManagePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>3</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyDateFormatOnQuotePage()'><b>verifyDateFormatOnQuotePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>3</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyQuoteManagePage()'><b>verifyQuoteManagePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>8</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyPolicyPage()'><b>verifyPolicyPage</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>9</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyManageTaskDashBoard()'><b>verifyManageTaskDashBoard</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>10</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyPolicyPageDateFormat()'><b>verifyPolicyPageDateFormat</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>7</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyManageClaimDateAndPondSymbol()'><b>verifyManageClaimDateAndPondSymbol</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>7</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyLetterTemplatePageEditFun()'><b>verifyLetterTemplatePageEditFun</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>15</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyLogOut()'><b>verifyLogOut</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>59</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyGraphMessages()'><b>verifyGraphMessages</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>0</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyQuotePagePremiumPoundSign()'><b>verifyQuotePagePremiumPoundSign</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>11</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
-<tr>
-<td title='testCases.Tc001_Login_Verify.verifyAddQuotePageLaunch()'><b>verifyAddQuotePageLaunch</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>20</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='testCases.Tc001_Login_Verify.verifyAddTaskPageDetails()'><b>verifyAddTaskPageDetails</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>40</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823575379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823575379'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyPolicyInformationPageLaunch()'><b>verifyPolicyInformationPageLaunch</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916700921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916700921'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyAccountPageIcon()'><b>verifyAccountPageIcon</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1955021259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1955021259'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyQuoteManagePage()'><b>verifyQuoteManagePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1081769770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1081769770'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyPolicyPage()'><b>verifyPolicyPage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749927456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace749927456'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyLetterTemplatePage()'><b>verifyLetterTemplatePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace841262455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace841262455'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyPolicyPageDateFormat()'><b>verifyPolicyPageDateFormat</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330400026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330400026'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyRole()'><b>verifyRole</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace932257672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace932257672'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871612052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871612052'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyLogOut()'><b>verifyLogOut</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693958407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693958407'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyClaimPageInformation()'><b>verifyClaimPageInformation</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1230955136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230955136'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyAddClaimPageDropDown()'><b>verifyAddClaimPageDropDown</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1044705957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1044705957'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyGraphMessages()'><b>verifyGraphMessages</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1298146757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1298146757'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyDateFormatOnQuotePage()'><b>verifyDateFormatOnQuotePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1319483139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1319483139'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyItemsOnDashboard()'><b>verifyItemsOnDashboard</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1864116663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864116663'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyMicroChipPageData()'><b>verifyMicroChipPageData</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318227903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318227903'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyPolicySamplePageDownLoad()'><b>verifyPolicySamplePageDownLoad</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594873248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594873248'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyClientManagePage()'><b>verifyClientManagePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133344792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2133344792'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyManageTaskDashBoard()'><b>verifyManageTaskDashBoard</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856158867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856158867'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
 <tr>
 <td title='testCases.Tc001_Login_Verify.verifyQuotePageData()'><b>verifyQuotePageData</b><br>Test class: testCases.Tc001_Login_Verify</td>
-<td></td>
-<td>23</td>
-<td>testCases.Tc001_Login_Verify@245b4bdc</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace258112787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace258112787'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyApprovalClaimDashBoardDetails()'><b>verifyApprovalClaimDashBoardDetails</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1336001042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1336001042'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyProductListOnAddQuotePage()'><b>verifyProductListOnAddQuotePage</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1067599825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1067599825'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyQuotePagePremiumPoundSign()'><b>verifyQuotePagePremiumPoundSign</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892335322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace892335322'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyLetterTemplatePageEditFun()'><b>verifyLetterTemplatePageEditFun</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775081157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775081157'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyAddQuotePageLaunch()'><b>verifyAddQuotePageLaunch</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace44559647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace44559647'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
+<tr>
+<td title='testCases.Tc001_Login_Verify.verifyManageClaimDateAndPondSymbol()'><b>verifyManageClaimDateAndPondSymbol</b><br>Test class: testCases.Tc001_Login_Verify</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1692885405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1692885405'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\prowe\IdeaProjects\BritishPetInsurance\BritishPetCare.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Tc001_Login_Verify@5158b42f</td></tr>
 </table><p>
 </body>
 </html>

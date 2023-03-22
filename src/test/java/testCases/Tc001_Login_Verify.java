@@ -6,11 +6,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.*;
 import testBase.TestBase;
+import utility.ScreenRecorderUtil;
 
 public class Tc001_Login_Verify extends TestBase {
+
     //1st Test case
     @Test(priority = 0)
     public void verifyLogin() {
+
         LogInPage logInPage = new LogInPage(driver);
         //Verification part code
         String Verification = logInPage.verifyCopyRight();
@@ -68,9 +71,9 @@ public class Tc001_Login_Verify extends TestBase {
         for (int i = 0; i < qLength; i++) {
             if (quoteDetail[i].equals("Quote")) {
                 System.out.println("Quote Tag Is Presented");
-            } else if (quoteDetail[i].equals("41881")) {
+            } else if (quoteDetail[i].equals("41891")) {
                 System.out.println("Total Quote Number Has Updated");
-            } else if (quoteDetail[i].equals("7")) {
+            } else if (quoteDetail[i].equals("17")) {
                 System.out.println("Monthly Quote Number Has Updated");
 
             } else {
@@ -87,9 +90,9 @@ public class Tc001_Login_Verify extends TestBase {
         for (int i = 0; i < pLength; i++) {
             if (policyDetail[i].equals("Policy")) {
                 System.out.println("Policy Tag Is Presented");
-            } else if (policyDetail[i].equals("19059")) {
+            } else if (policyDetail[i].equals("19068")) {
                 System.out.println("Total Policy Number Has Updated");
-            } else if (policyDetail[i].equals("5")) {
+            } else if (policyDetail[i].equals("14")) {
                 System.out.println("Monthly Policy Number Has Updated");
 
             } else {
@@ -105,9 +108,9 @@ public class Tc001_Login_Verify extends TestBase {
         for (int i = 0; i < cLength; i++) {
             if (claimDetail[i].equals("Claim")) {
                 System.out.println("Claim Tag Is Presented");
-            } else if (claimDetail[i].equals("146")) {
+            } else if (claimDetail[i].equals("148")) {
                 System.out.println("Total Claim Number Has Updated");
-            } else if (claimDetail[i].equals("2")) {
+            } else if (claimDetail[i].equals("4")) {
                 System.out.println("Monthly Claim Number Has Updated");
 
             } else {

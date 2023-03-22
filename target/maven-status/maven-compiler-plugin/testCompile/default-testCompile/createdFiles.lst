@@ -23,6 +23,7 @@ utility\ExtentReportManager.class
 testBase\TestBase.class
 testCases\Tc001_Login_Verify.class
 pageObjects\QuotePagePremiumCheck.class
+utility\ScreenRecorderUtil.class
 pageObjects\AddQuotePageProductList.class
 pageObjects\Dashboard_Item_Details.class
 pageObjects\PolicyDashBoardPage.class

@@ -8,15 +8,34 @@
     <classes>
       <class name="testCases.Tc001_Login_Verify">
         <methods>
+          <include name="verifyQuotePageData"/>
           <include name="verifyPolicySamplePageDownLoad"/>
+          <include name="verifyProductListOnAddQuotePage"/>
+          <include name="verifyQuoteManagePage"/>
+          <include name="tearDown"/>
+          <include name="verifyPolicyPageDateFormat"/>
+          <include name="verifyPolicyPage"/>
+          <include name="verifyQuotePagePremiumPoundSign"/>
+          <include name="verifyDateFormatOnQuotePage"/>
+          <include name="verifyLetterTemplatePageEditFun"/>
+          <include name="verifyApprovalClaimDashBoardDetails"/>
+          <include name="verifyClaimPageInformation"/>
+          <include name="verifyAddClaimPageDropDown"/>
+          <include name="verifyManageTaskDashBoard"/>
+          <include name="verifyLogOut"/>
+          <include name="verifyClientManagePage"/>
+          <include name="verifyLetterTemplatePage"/>
+          <include name="verifyAddQuotePageLaunch"/>
+          <include name="verifyRole"/>
+          <include name="verifyMicroChipPageData"/>
+          <include name="verifyLogin"/>
+          <include name="verifyGraphMessages"/>
           <include name="verifyItemsOnDashboard"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="verifyAccountPageIcon"/>
-          <include name="verifyClaimPageInformation"/>
-          <include name="verifyMicroChipPageData"/>
+          <include name="verifyManageClaimDateAndPondSymbol"/>
+          <include name="verifyAddTaskPageDetails"/>
           <include name="verifyPolicyInformationPageLaunch"/>
-          <include name="verifyAddClaimPageDropDown"/>
         </methods>
       </class> <!-- testCases.Tc001_Login_Verify -->
     </classes>
