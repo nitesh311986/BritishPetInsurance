@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +23,9 @@ public class TestBase {
     @BeforeClass
 
     public void setUp() {
-        driver=new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver=new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("http://52.32.106.250:7779/");
         //driver.navigate().to("http://52.32.106.250:7779/");
